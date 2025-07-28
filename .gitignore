@@ -1,0 +1,10 @@
+/CheatClient/bin/
+/CheatClient/obj/
+/transformer_model/training_data
+/transformer_model/venv/
+__pycache__/
+checkpoints/
+wandb/
+*.dst*
+*.hdf5*
+*.pt*
