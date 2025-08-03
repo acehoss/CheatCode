@@ -90,10 +90,10 @@ def plot_data(frame, symbol, ax1, ax2, dubba_labels_both):
             short_signal_strength = orig_short_signal_strength
             print(f"{i:02d} {j:02d} {short_signal_strength:0.2f} {long_signal_strength:0.2f}")
 
-            if (orig_long_signal_strength * 0.85) < orig_short_signal_strength or orig_long_signal_strength < 0.2:
+            if (orig_long_signal_strength * 0.95) < orig_short_signal_strength or orig_long_signal_strength < 0.05:
                 long_signal_strength = 0
 
-            if (orig_short_signal_strength * 0.85) < orig_long_signal_strength or orig_short_signal_strength < 0.2:
+            if (orig_short_signal_strength * 0.95) < orig_long_signal_strength or orig_short_signal_strength < 0.05:
                 short_signal_strength = 0
 
             total_long_signal += orig_long_signal_strength
@@ -302,7 +302,7 @@ if __name__ == "__main__":
             "dbname": "trade_data",
             "user": "postgres",
             "password": "mysecretpassword",
-            "host": "localhost",
+            "host": "hossgames",
             "port": "5432"
         }
         dataset = CheatCodeDataset(start_date, end_date, db_params, args.frame_period)

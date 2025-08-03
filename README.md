@@ -34,7 +34,7 @@ Note: the training data set evolved and morphed over time, so the specific numbe
 **Data Source**:
 
 - DataBento purchase of tick-by-tick /ES and /NQ futures data
-- 5 years of minute-by-minute trading data
+- 5 years of second-by-second trading data
 
 **Storage Evolution**:
 
@@ -143,9 +143,7 @@ Building a transformer from scratch to solve a real problem (even if unsuccessfu
 
 The project failed at its stated goal but succeeded in deepening my understanding of the technology that powers modern AI. Sometimes the best way to understand something is to build it yourself.
 
----
-
-*Built to answer: "How hard could market prediction be?" Answer: Very.*
+![CheatCode model inference](CheatCode_plot_frame.png)
 
 ## Project Structure
 
